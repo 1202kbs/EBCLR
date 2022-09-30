@@ -6,3 +6,7 @@ We propose a visual representation learning framework, Energy-Based Contrastive 
 <p align="center">
   <img src="https://github.com/1202kbs/EBCLR/blob/main/assets/main.png" />
 </p>
+
+## How to Run This Code
+
+Example codes for training and linear / KNN evaluation can be found in `Train.ipynb` and `Evaluation.ipynb`, respectively.
