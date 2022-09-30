@@ -1,0 +1,38 @@
+epochs : 200
+bs : 256
+p_epoch : 5
+s_epoch : 5
+
+data:
+  data_dir : "./data"
+  dataset : "cifar10"
+  data_ratio : 1.0
+
+optim:
+  optimizer: "sgd"
+  init_lr: 0.03
+  lr_schedule: "const"
+  weight_decay: 0.0001
+
+net:
+  encoder : "resnet18"
+  use_bn : true
+  use_sn : false
+  use_wn : false
+  act : "relu"
+  proj_dim : 2048
+  nc : 3
+
+t:
+  crop_scale:
+    min: 0.08
+    max: 1.0
+  flip_p : 0.5
+  jitter:
+    b: 0.8
+    c: 0.8
+    s: 0.8
+    h: 0.2
+  jitter_p : 0.8
+  gray_p : 0.2
+  blur_scale : 0.1

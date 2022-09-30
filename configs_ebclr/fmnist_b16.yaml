@@ -1,0 +1,48 @@
+temperature: 0.1
+normalize: true
+bs: 16
+lmda1: 0.001
+lmda2: 0.1
+epochs: 200
+p_iter: 960
+s_epoch: 5
+save_buffer: true
+
+data:
+  data_dir : "./data"
+  dataset : "fmnist"
+  data_ratio : 1.0
+
+sgld:
+  iter: 10
+  lr: 0.05
+  min_std: 0.01
+  max_std: 0.05
+  threshold: 3.0
+  tau: 1.0
+
+buffer:
+  CD_ratio: 1.0
+  size: 50000
+  rho: 0.6
+  bs: 256
+
+optim:
+  optimizer: "adam"
+  init_lr: 0.0001
+  lr_schedule: "const"
+
+net:
+  encoder: "resnet18"
+  use_bn: false
+  use_sn: false
+  use_wn: false
+  act: "lrelu"
+  proj_dim: 128
+  nc: 1
+
+t:
+  crop_scale:
+    min: 0.08
+    max: 1.0
+  noise_std : 0.03

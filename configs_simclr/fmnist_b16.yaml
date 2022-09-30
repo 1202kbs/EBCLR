@@ -1,0 +1,30 @@
+temperature : 0.1
+epochs : 200
+bs : 16
+p_epoch : 5
+s_epoch : 5
+
+data:
+  data_dir : "./data"
+  dataset : "fmnist"
+  data_ratio : 1.0
+
+optim:
+  optimizer: "sgd"
+  init_lr: 0.001875
+  lr_schedule: "const"
+  weight_decay: 0.0001
+
+net:
+  encoder : "resnet18"
+  use_bn : true
+  use_sn : false
+  use_wn : false
+  act : "relu"
+  proj_dim : 128
+  nc : 1
+
+t:
+  crop_scale:
+    min: 0.08
+    max: 1.0
