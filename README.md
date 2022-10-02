@@ -10,3 +10,16 @@ We propose a visual representation learning framework, Energy-Based Contrastive 
 ## How to Run This Code
 
 Example codes for training and linear / KNN evaluation can be found in `Train.ipynb` and `Evaluation.ipynb`, respectively.
+
+## References
+
+If you find the code useful for your research, please consider citing
+```bib
+@inproceedings{
+  kim2022ebclr,
+  title={Energy-Based Contrastive Learning of Visual Representations},
+  author={Beomsu Kim and Jong Chul Ye},
+  booktitle={NeurIPS},
+  year={2022}
+}
+```
